@@ -1,0 +1,8 @@
+{
+  "name": "bug-repro",
+  "private": true,
+  "dependencies": {
+    "cli-cursor": "3.1.0",
+    "log-update": "6.0.0"
+  }
+}
