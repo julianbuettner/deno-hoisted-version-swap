@@ -1,8 +1,8 @@
-# Deno 2.8 `nodeModulesLinker: "hoisted"` — direct dep pin ignored
+# Deno 2.8 `nodeModulesLinker: "hoisted"` version swap
 
 `package.json` pins `cli-cursor@3.1.0` as a direct dependency. A transitive
 dep (`log-update` → `cli-cursor@^4.0.0`) wants a higher version. Deno hoists
-`4.0.0` to the root, ignoring the direct pin. npm honors the pin.
+`4.0.0` to the root and gives `log-update` version `3.1.0`, so it's swapped.
 
 Related: [denoland/deno#32788](https://github.com/denoland/deno/pull/32788).
 
